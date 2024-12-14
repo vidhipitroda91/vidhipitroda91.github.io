@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+  }
+  :root {
+    --bg-color: #080808;
+    --second-bg-color: #101010;
+    --text-color: white;
+    --main-color: #eb6a24;
+  }
+  html {
+    font-size: 60%;
+    overflow-x: hidden;
+  }
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+  }
+ /* Content Box */
+.content {
+    max-width: 1200px; /* Wider box */
+    margin: -100px auto 40px auto; /* Move the box slightly lower */
+    padding: 60px; /* Add more internal spacing */
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    border-radius: 20px;
+}
+
+/* Font and Spacing Adjustments */
+.content h2 {
+    font-size: 2.2rem; /* Slightly larger headings */
+    margin-bottom: 25px; /* Add more spacing below headings */
+}
+
+.content p, .content ul {
+    font-size: 20px; /* Make the text slightly larger */
+    line-height: 2; /* Increase line height for better readability */
+}
+
+/* Move the box lower to expose parallax */
+.parallax {
+    min-height: 500px; /* Make the parallax image taller */
+    background-image: url("banner-image.jpg"); /* Your image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered Scroll Down Text */
+.scroll-down {
+    position: absolute;
+    top: 33%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: #c05216;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2; /* Above image */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(145deg, white);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.5);
+    background-color: #ea580c;
+    font-size: 20px;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.7);
+}
+
+</style>
+</head>
+<body>
+
+<div class="parallax">
+    <span class="scroll-down">Steagnograpgy</span>
+</div>
+
+<div class="content">
+    <h2>Steagnograpgy</h2>
+    <p>
+        Steganography is the technique of hiding information (such as text) inside an image in a way that is not obvious to the viewer. In a Python project using Tkinter, you can implement steganography by embedding text within an image, allowing a user to hide or extract text from an image using a graphical user interface (GUI).
+    </p>
+<br>
+<br><br>
+    <h2>Features</h2>
+
+    <ul>
+        <li>GUI Creation using Tkinter: Tkinter is used to create a simple interface where users can choose an image, input text to hide, or extract hidden text. The GUI can have buttons for these actions.</li>
+        <li>Embedding Text in Image: This is done using the least significant bit (LSB) method, where the text is converted into binary and embedded into the pixel values of the image. The color values of the image (usually in the RGB format) are modified slightly to encode the binary data of the text. The changes made are typically not noticeable to the human eye.</li>
+        <li>Extracting Hidden Text: The reverse process can be done to extract the hidden text. The binary data embedded in the least significant bits of the image pixels is retrieved and converted back into readable text</li>
+    </ul>
+<br><br><br>
+<p>
+    Github Link : <a href="https://github.com/vidhipitroda91/steganography">Steagnograpgy</a>
+</p>
+
+    <a href="index.html" class="back-button">Back to Projects</a>
+</div>
+
+
+</body>
+</html>
